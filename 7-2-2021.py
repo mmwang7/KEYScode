@@ -51,7 +51,7 @@ for csv in os.listdir(directory):
     next_df = clean(next_df)
     group.append(next_df)
     
-    if (len(group) == 10000):
+    if (len(group) == 10):
         big_df = big_df.append(group)
         group = []
         # break
